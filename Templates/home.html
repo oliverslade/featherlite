@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeatherLite - Light Web Development Principles</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>FeatherLite Web Server</h1>
+      <p>
+        A minimal Kestrel server following light web development principles.
+      </p>
+
+      <div class="metrics">
+        <h3>Server Info</h3>
+        <p><strong>Server Time:</strong> {{SERVER_TIME}} UTC</p>
+        <p><strong>Status:</strong> Running</p>
+        <p><strong>Framework:</strong> Minimal Kestrel</p>
+      </div>
+
+      <h2>Implemented Principles</h2>
+
+      <div class="principle">
+        <h3>✓ Own the whole request response loop</h3>
+        <p>
+          Direct Kestrel usage with manual routing. Every byte is controlled.
+        </p>
+      </div>
+
+      <div class="principle">
+        <h3>✓ Server-side first</h3>
+        <p>HTML generated on the server. Zero JavaScript.</p>
+      </div>
+
+      <div class="principle">
+        <h3>✓ Minimize round-trips</h3>
+        <p>Single response with all required data.</p>
+      </div>
+
+      <div class="principle">
+        <h3>✓ Ditch heavyweight frameworks</h3>
+        <p>No React, no ORM, no unnecessary abstractions.</p>
+      </div>
+
+      <div class="principle">
+        <h3>✓ Simple, clean code</h3>
+        <p>Straightforward implementation without unnecessary complexity.</p>
+      </div>
+    </div>
+  </body>
+</html>
